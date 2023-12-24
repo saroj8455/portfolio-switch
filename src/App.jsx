@@ -7,6 +7,9 @@ function App() {
 
   return (
     <>
+      <nav>
+        <p>Navbar</p>
+      </nav>
       <div className='container'>
         <h1>Hello World App</h1>
         <p>
