@@ -7,35 +7,63 @@ function App() {
 
   return (
     <>
-      <nav>
-        <p>Navbar</p>
-      </nav>
-      <div className='container'>
-        <h1>Hello World App</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          similique, porro deleniti nihil nam laudantium, possimus ipsa quaerat
-          quos eum, facere veritatis labore ipsam id. Asperiores, illo nostrum.
-          Ad, maiores?
-        </p>
-        <section>
+      <nav>Navbar</nav>
+      <section>
+        <div className='container'>
           <div className='surface-card border-round shadow-2 p-4'>
-            <h1>Hello World App</h1>
-          </div>
-        </section>
-        <div className='px-4 py-8 md:px-6 lg:px-8 flex gap-2 justify-content-center align-items-center'>
-          <div className='surface-card w-6 sm:w-max border-round shadow-2 p-4'>
-            <p className='text-center text-6xl font-bold'>Portfolio/Resume</p>
-            <p className='text-center font-bold'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio,
-              dicta?
-            </p>
-            <div className='card flex justify-content-center'>
-              <Prime.Button label='Click Here' />
+            <div className='flex flex-column gap-2'>
+              <h1 className='m-0 text-900 text-3xl font-medium line-height-3'>
+                Saroj Padhan
+              </h1>
+              <p className='mt-0 mb-0 text-600 text-lg'>
+                Software Engineer, Cognizant
+              </p>
+              <p className='mt-0 mb-0 text-600 text-sm'>
+                Experience in the development of Web-based solutions and
+                Application development as a Full Stack Developer. Experience in
+                Application Development using RestFull Webservice, HTML5, CSS3,
+                Javascript, Angular, ReactJs, PHP and NodeJs.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section className='mt-2 '>
+        <div className='container'>
+          <div className='surface-card border-round shadow-2 p-4'>
+            <div className='flex flex-column gap-2'>
+              <h1 className='m-0 text-900 text-3xl font-medium line-height-3'>
+                Contact Information
+              </h1>
+              <div className='mt-0 mb-0 text-600 text-lg'>
+                <div className='card'>
+                  <Prime.Button
+                    icon='pi pi-mobile'
+                    rounded
+                    text
+                    severity='success'
+                    label='+91- 7809120629'
+                  />
+                  <Prime.Button
+                    icon='pi pi-at'
+                    rounded
+                    text
+                    severity='success'
+                    label='saroj.padhan11@gmail.com'
+                  />
+                  <Prime.Button
+                    icon='pi pi-github'
+                    rounded
+                    text
+                    severity='success'
+                    label='https://github.com/saroj8455/'
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
